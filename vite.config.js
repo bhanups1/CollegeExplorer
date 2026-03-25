@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Collage-Explore-main/',
   plugins: [react(),
     tailwindcss()
   ],
@@ -11,4 +12,3 @@ export default defineConfig({
     port: 5583
   }
 })
-
