@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Collage-Explore-main/',
+  base: process.env.VERCEL === '1' ? '/' : '/Collage-Explore-main/',
   plugins: [react(),
     tailwindcss()
   ],
